@@ -1,3 +1,5 @@
+#!/bin/bash
+
 #part1
 printf '\033c'
 echo "Welcome to yb1 Arch-installer"
@@ -17,6 +19,7 @@ sed '1,/^#part2$/d' `basename $0` > /mnt/yb1.sh
 chmod +x /mnt/yb1.sh
 arch-chroot /mnt ./yb1.sh
 exit
+sleep 2s
 
 #part2
 printf '\033c'
