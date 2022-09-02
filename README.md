@@ -1,4 +1,4 @@
-# This is yb1 arch-installer.
+# This is yb1 arch-installer(only for VM).
 ** yb1 arch-installer is a Script to Install ArchLinux. **
 ### Step 1: loading your keyboard layout.
 
@@ -12,23 +12,23 @@ pacman -Sy git
 
 git clone https://github.com/Faizalyb1/arch-installer.git
 
-### Step 4: copy the "archMega.sh" to the root.
+### Step 4: copy the "yb1.sh" to the root.
 
-cp ArchMega/archMega.sh /root
+cp arch-installer/yb1.sh /root
 
 ### Step 5: make the script executable.
 
-chmod +x archMega.sh
+chmod +x yb1.sh
 
 ### Step 6: run the script.
 
-./archMega.sh
+./yb1.sh
 
-Note1: The script is going to launch cfdisk and you have to creat 3 partition, the first one is EFI and the second is the SWAP partition and the 3 is the filesystem in this order.
+Note1: The script is going to launch cfdisk and you have to creat 3 partition, the first one is /boot and the second is the SWAP partition and the 3 is the / filesystem in this order.
 
 Note2: After the installation is finished you need to reboot the system.
 
-*** Et voilà ***
+*** End ***
 
 # This is Suckless Power.
 ** suckLess.sh is a Script to SetUp The Suckless Tools. **
