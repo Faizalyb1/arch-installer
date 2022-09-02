@@ -4,13 +4,13 @@ echo "Welcome to yb1 Arch-installer"
 pacman --noconfirm -Sy archlinux-keyring
 timedatectl set-ntp true
 lsblk
-mkfs.ext4 /dev/sda3
-mount /dev/sda3 /mnt
+mkfs.ext4 /dev/vda3
+mount /dev/vda3 /mnt
 mkdir /mnt/boot
-mkfs.ext4 /dev/sda1
-mount /dev/sda1 /mnt/boot
-mkswap /dev/sda2
-swapon /dev/sda2
+mkfs.ext4 /dev/vda1
+mount /dev/vda1 /mnt/boot
+mkswap /dev/vda2
+swapon /dev/vda2
 pacstrap /mnt base base-devel linux linux-firmware
 genfstab -U /mnt >> /etc/fstab
 sed '1,/^#part2$/d' `basename $0` > /mnt/yb1.sh
