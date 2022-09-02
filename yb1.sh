@@ -14,9 +14,9 @@ mkswap /dev/sda2
 swapon /dev/sda2
 pacstrap /mnt base base-devel linux linux-firmware
 genfstab -U /mnt >> /etc/fstab
-sed '1,/^#part2$/d' `basename $0` > /mnt/archMega.sh
-chmod +x /mnt/archMega.sh
-arch-chroot /mnt ./archMega.sh
+sed '1,/^#part2$/d' `basename $0` > /mnt/yb1.sh
+chmod +x /mnt/yb1.sh
+arch-chroot /mnt ./yb1.sh
 exit
 
 #part2
