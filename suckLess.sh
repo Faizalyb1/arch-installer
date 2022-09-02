@@ -15,6 +15,8 @@ cd ..
 cd st/
 sudo make clean install
 cd
+
+break
 #parte2
 
 printf '\033c'
@@ -23,6 +25,6 @@ echo "setxkbmap us &" > .xinitrc
 echo "picom &" >> .xinitrc
 echo "feh --bg-fill $HOME/Wallpaper/19.jpg &" >> .xinitrc
 echo "exec dwm" >> .xinitrc
-git clone https://github.com/elbachir-one/Wallpaper
+git clone https://github.com/Faizalyb1/Wallpaper.git
 echo "startx" >> .bash_profile
 sudo reboot
