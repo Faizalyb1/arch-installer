@@ -4,7 +4,6 @@ echo "Welcome to yb1 Arch-installer"
 pacman --noconfirm -Sy archlinux-keyring
 timedatectl set-ntp true
 lsblk
-cfdisk
 mkfs.ext4 /dev/sda3
 mount /dev/sda3 /mnt
 mkdir /mnt/boot
