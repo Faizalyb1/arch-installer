@@ -1,5 +1,5 @@
-# This is ArchMega.
-** archMega.sh is a Script to Install ArchLinux. **
+# This is yb1 arch-installer.
+** yb1 arch-installer is a Script to Install ArchLinux. **
 ### Step 1: loading your keyboard layout.
 
 loadkey ...
@@ -10,7 +10,7 @@ pacman -Sy git
 
 ### Step 3: clone the script.
 
-git clone https://github.com/elbachir-one/ArchMega
+git clone https://github.com/Faizalyb1/arch-installer.git
 
 ### Step 4: copy the "archMega.sh" to the root.
 
@@ -35,7 +35,7 @@ Note2: After the installation is finished you need to reboot the system.
 
 Note: Make sure you login with your user name.
 ### Step1: git the script.
-git clone https://github.com/elbachir-one/ArchMega
+git clone https://github.com/Faizalyb1/arch-installer.git
 
 ### Step2: copy the script to your home directory and make it executable.
 cp ArchMega/suckLess.sh
