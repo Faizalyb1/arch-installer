@@ -23,7 +23,7 @@ sleep 2s
 
 #part2
 printf '\033c'
-pacman -Sy --noconfirm vim grub networkmanager terminus-font git os-prober efibootmgr
+pacman -Sy --noconfirm vim grub networkmanager terminus-font git os-prober
 ln -sf /usr/share/zoneinfo/Asia/Kolkata /etc/localtime
 hwclock --systohc
 echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen
